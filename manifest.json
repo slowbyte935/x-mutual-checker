@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "X 互关检查（本地版）",
+  "version": "0.2.2",
+  "description": "点击一次，自动核对已登录 X 账号的关注与关注者。",
+  "permissions": ["activeTab", "scripting"],
+  "background": {"service_worker": "background.js"},
+  "action": {"default_title": "自动查找 X 未回关"},
+  "content_security_policy": {"extension_pages": "script-src 'self'; object-src 'none'; connect-src 'none'"}
+}

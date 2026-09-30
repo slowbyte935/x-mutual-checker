@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>X 未回关检查</title><link rel="stylesheet" href="results.css"></head>
+<body><main>
+  <header><h1>X 未回关检查</h1><p>自动读取已登录账号的可见关注列表，在此浏览器内比对。</p></header>
+  <section class="card"><h2 id="phase">正在准备</h2><p id="progress" aria-live="polite">正在连接 X 标签页…</p><div class="meter"><div id="bar"></div></div><p id="detail"></p></section>
+  <section id="summary" class="card" hidden><h2 id="resultTitle"></h2><p id="counts"></p><p id="status"></p><div class="actions"><button id="md" disabled>保存 Markdown</button><button id="csv" disabled>保存 CSV</button></div></section>
+  <section id="listSection" class="card" hidden><p>序号对应扫描时“正在关注”页面从上到下的位置。</p><label for="filter">搜索账号</label><input id="filter" type="search" placeholder="账号或名称"><ol id="list"></ol></section>
+  <p class="privacy">仅读取账号名称、主页链接、关系标记和主页人数；不读取或保存密码、Cookie、IP、私信。不执行关注或取关。浏览器访问 X 本身仍遵循你当前的网络设置。</p>
+</main><script src="runner.js"></script><script src="results.js"></script></body></html>
